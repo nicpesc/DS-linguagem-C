@@ -190,5 +190,18 @@ printf("digite lado 3: \n");
 
 scanf("%d", &lado3);
 
-if
+if (lado1 + lado2 > lado3 && lado1 + lado2 > lado3 && b + c > a) {
+        if (a == b && b == c) {
+            printf("Triângulo equilátero.\n");
+        } else if (a == b || a == c || b == c) {
+            printf("Triângulo isósceles.\n");
+        } else {
+            printf("Triângulo escaleno.\n");
+        }
+    } else {
+        printf("Os valores informados não formam um triângulo.\n");
+    }
+
+    return 0;
+
 
