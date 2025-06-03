@@ -166,5 +166,12 @@ scanf ("%d", &numero);
 printf("A raiz quadrada de %d é %.1f \n", numero, sqrt(numero))
 ;
 
+   return 0;
+}
+
+
 **//Questão 10**
+
+#include <stdio.h>
+
 
