@@ -174,4 +174,21 @@ printf("A raiz quadrada de %d é %.1f \n", numero, sqrt(numero))
 
 #include <stdio.h>
 
+int main() {
+
+int lado1, lado2, lado3;
+
+printf("digite lado 1: \n");
+
+scanf("%d", &lado1);
+
+printf("digite lado 2: \n");
+
+scanf("%d", &lado2);
+
+printf("digite lado 3: \n");
+
+scanf("%d", &lado3);
+
+if
 
