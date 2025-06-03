@@ -194,16 +194,16 @@ if (a + b > c && a + c > b && b + c > a) {
 return 0;
 }
 
-//Questão 13
+**//Questão 13**
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() { int n, i; float nota, peso, somaNotas = 0, somaPesos = 0, media;
+    int main() { int n, i; float nota, peso, somaNotas = 0, somaPesos = 0, media;
 
-printf("Quantas notas você quer inserir? ");
-scanf("%d", &n);
+    printf("Quantas notas você quer inserir? ");
+    scanf("%d", &n);
 
-for (i = 1; i <= n; i++) {
+    for (i = 1; i <= n; i++) {
     printf("Digite a nota %d: ", i);
     scanf("%f", &nota);
 
@@ -212,99 +212,98 @@ for (i = 1; i <= n; i++) {
 
     somaNotas += nota * peso;
     somaPesos += peso;
-}
+     }
 
-if (somaPesos != 0) {
+    if (somaPesos != 0) {
     media = somaNotas / somaPesos;
-    printf("A média ponderada é: %.2f\n", media);
-} else {
-    printf("Erro: a soma dos pesos não pode ser zero.\n");
-}
+         printf("A média ponderada é: %.2f\n", media);
+        } else {
+        printf("Erro: a soma dos pesos não pode ser zero.\n")
+        }
 
-return 0;
-}
+        return 0;
+        }
 
-//Questão 25
+**//Questão 25**
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() { float fahrenheit, celsius;
+     int main() 
+    { 
+    float fahrenheit, celsius;
 
-printf("Digite a temperatura em Fahrenheit: ");
-scanf("%f", &fahrenheit);
+    printf("Digite a temperatura em Fahrenheit: ");
+     scanf("%f", &fahrenheit);
 
-celsius = (5.0 / 9.0) * (fahrenheit - 32);
+     celsius = (5.0 / 9.0) * (fahrenheit - 32);
 
-printf("A temperatura em Celsius é: %.2f°C\n", celsius);
+    printf("A temperatura em Celsius é: %.2f°C\n", celsius);
 
-return 0;
-}
+     return 0;
+      }
 
-//Questão 27
+**//Questão 27**
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() { float preco, novoPreco;
+    int main() { float preco, novoPreco;
 
-printf("Digite o preço do produto: R$ ");
-scanf("%f", &preco);
+    printf("Digite o preço do produto: R$ ");
+    scanf("%f", &preco);
 
-if (preco < 100) {
+    if (preco < 100) {
     novoPreco = preco * 1.10;  // aumento de 10%
-} else {
-    novoPreco = preco * 1.20;  // aumento de 20%
-}
+     } else {
+     novoPreco = preco * 1.20;  // aumento de 20%
+    }
 
-printf("O novo preço com inflação é: R$ %.2f\n", novoPreco);
+    printf("O novo preço com inflação é: R$ %.2f\n", novoPreco);
 
-return 0;
-}
+    return 0;
+    }
 
-//Questao 28
+** //Questao 28**
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() { float total; int opcao;
+    int main() { float total; int opcao;
+    printf("Total gasto: R$ ");
+    scanf("%f", &total);
 
-printf("Total gasto: R$ ");
-scanf("%f", &total);
-
-printf("1-À vista\n2-Cartão\n3-2x sem juros\n4-3x com juros\nOpção: ");
-scanf("%d", &opcao);
-
-if (opcao == 1)
+    printf("1-À vista\n2-Cartão\n3-2x sem juros\n4-3x com juros\nOpção: ");
+    scanf("%d", &opcao);if (opcao == 1)
+    
     printf("Total: R$ %.2f\n", total * 0.9);
-else if (opcao == 2)
+    else if (opcao == 2)
     printf("Total: R$ %.2f\n", total);
-else if (opcao == 3)
-    printf("2x de R$ %.2f\n", total / 2);
-else if (opcao == 4)
+    else if (opcao == 3)
+    printf("2x de R$ %.2f\n", total / 2); 
+    else if (opcao == 4)
     printf("3x de R$ %.2f\n", (total * 1.1) / 3);
-else
+    else
     printf("Opção inválida.\n");
-
-return 0;
-}
+    return 0;
+    }
 
 //Questão 34
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() { char nome[50], endereco[50], telefone[20]; int idade;
+    int main() { char nome[50], endereco[50], telefone[20]; int idade;
 
-printf("Digite seu nome: ");
-scanf("%s", nome);
+    printf("Digite seu nome: ");
+    scanf("%s", nome);
 
-printf("Digite sua idade: ");
-scanf("%d", &idade);
+    printf("Digite sua idade: ");
+    scanf("%d", &idade);
 
-printf("Digite seu endereço: ");
-scanf("%s", endereco);
+    printf("Digite seu endereço: ");
+    scanf("%s", endereco);
 
-printf("Digite seu telefone: ");
-scanf("%s", telefone);
+    printf("Digite seu telefone: ");
+    scanf("%s", telefone);
 
-printf("\nSeu nome é %s, você tem %d anos, mora na rua %s e seu telefone é %s.\n", nome, idade, endereco, telefone);
+    printf("\nSeu nome é %s, você tem %d anos, mora na rua %s e seu telefone é %s.\n", nome, idade, endereco, telefone);
 
-return 0;
-}
+    return 0;
+     }
