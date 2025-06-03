@@ -14,8 +14,6 @@
     scanf("%d", &y);
      printf("Soma: %d" , x+y);
 
-     }
-
     return 0;
 
       }
@@ -37,7 +35,7 @@
     }
     else {
     
-        printf("O numero %d é impar \n", numero)
+        printf("O numero %d é impar \n", numero);
     }
 
     return 0;
@@ -108,6 +106,10 @@
     
     scanf("%d", &num2);
 
+    printf("digite o terceiro número: ");
+    
+    scanf("%d", &num3);
+
     maior = num1;
     
     if (num2 > maior) {
@@ -172,7 +174,10 @@
 
     #include <stdio.h>
 
-    int main() { int n, i; float nota, peso, somaNotas = 0, somaPesos = 0, media;
+    int main() 
+    { 
+    int n, i; 
+    float nota, peso, somaNotas = 0, somaPesos = 0, media;
 
     printf("Quantas notas você quer inserir? ");
     scanf("%d", &n);
@@ -192,7 +197,8 @@
     media = somaNotas / somaPesos;
          printf("A média ponderada é: %.2f\n", media);
         } else {
-        printf("Erro: a soma dos pesos não pode ser zero.\n")
+        printf("Erro: a soma dos pesos não pode ser zero.\n");
+        
         }
 
         return 0;
@@ -263,7 +269,9 @@
 
     #include <stdio.h>
 
-    int main() { char nome[50], endereco[50], telefone[20]; int idade;
+    int main()
+    { 
+    char nome[50], endereco[50], telefone[20]; int idade;
 
     printf("Digite seu nome: ");
     scanf("%s", nome);
