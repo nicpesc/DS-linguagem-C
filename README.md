@@ -2,126 +2,103 @@
 
 **//Questão 1**
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-  int x,y;
+    int main() {
+    int x,y;
   
-printf("Insira o Numero 1: \n");
+    printf("Insira o Numero 1: \n");
 
-scanf("%d", &x);
+    scanf("%d", &x);
+    printf("Insira o Numero 2: \n");
+    scanf("%d", &y);
+     printf("Soma: %d" , x+y);
 
-printf("Insira o Numero 2: \n");
+     }
 
-scanf("%d", &y);
+    return 0;
 
-printf("Soma: %d" , x+y);
-
-}
-
-return 0;
-
-}
+      }
 
 **//Questão 2**
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-
- int numero;
+    int main() {
+    int numero;
  
-printf("Insira um número: \n");
+    printf("Insira um número: \n");
+     scanf("%d", &numero);
 
-scanf("%d", &numero);
-
-if (numero % 2 == 0) {
+    if (numero % 2 == 0) {
 
     printf("O numero %d é par \n", numero);
     
-}
+    }
     else {
     
         printf("O numero %d é impar \n", numero)
-}
+    }
 
-return 0;
+    return 0;
 
-}
+    }
 
 **//Questão 4**
 
-#include <stdio.h>
+     #include <stdio.h>
 
-int main() {
+    int main() {
+       int a, b, c, d, e, f;
+     float media;
 
- int a, b, c, d, e, f;
- 
-float media;
+     printf("Selecione o primeiro numero: \n");
+     scanf("%d", &a);
+      printf("Selecione o segundo numero: \n");
+      scanf("%d", &b);
+    printf("Selecione o terceiro numero: \n");
+    scanf("%d", &c);
 
-printf("Selecione o primeiro numero: \n");
-
-scanf("%d", &a);
-
-printf("Selecione o segundo numero: \n");
-
-scanf("%d", &b);
-
-printf("Selecione o terceiro numero: \n");
-
-scanf("%d", &c);
-
-printf("Selecione o quarto numero: \n");
-
-scanf("%d", &d);
-
-printf("Selecione o quinto numero: \n");
-
-scanf("%d", &e);
-
-printf("Selecione o sexto numero: \n");
-
-scanf("%d", &f);
-
-media = (a+b+c+d+e+f)/ 6.0;
-
-printf("A media é: %.2f\n", media);
-
-return 0;
-
-}
+      printf("Selecione o quarto numero: \n");
+      scanf("%d", &d);
+      printf("Selecione o quinto numero: \n");
+    scanf("%d", &e);
+     printf("Selecione o sexto numero: \n");
+     scanf("%d", &f);
+    media = (a+b+c+d+e+f)/ 6.0;
+    printf("A media é: %.2f\n", media);
+       return 0;
+         }
 
 **//Questão 5**
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
+    int main() {
+    int ano;
 
-int ano;
+    printf("Insira um ano: \n");
+    scanf("%d", &ano);
+ 
+    if (ano % 4 == 0 && ano % 100 != 0) {
 
-printf("Insira um ano: \n");
-
-scanf("%d", &ano);
-
-if (ano % 4 == 0 && ano % 100 != 0) {
-
-printf("O ano %d é bissexto.\n", ano);
+    printf("O ano %d é bissexto.\n", ano);
 
     } else {
         printf("O ano %d não é bissexto.\n", ano);
     }
     
-return 0;
+    return 0;
 
-}
+     }
 
 **//Questão 7**
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
+       int main() {
 
-int num1, num2, num3, maior;
+      int num1, num2, num3, maior;
 
     printf("digite o primeiro número: ");
     
@@ -151,35 +128,32 @@ int num1, num2, num3, maior;
 
 **//Questão 8**
 
-#include <stdio.h>
+    #include <stdio.h>
+      #include <math.h>
 
-#include <math.h>
+     int main() {
+    int numero;
 
-int main() {
+    printf ("Selecione um número: \n");
 
-int numero;
+     scanf ("%d", &numero);
 
-printf ("Selecione um número: \n");
+     printf("A raiz quadrada de %d é %.1f \n", numero, sqrt(numero));
 
-scanf ("%d", &numero);
-
-printf("A raiz quadrada de %d é %.1f \n", numero, sqrt(numero))
-;
-
-   return 0;
-}
+     return 0;
+     }
 
 
 //Questão 10
 
-#include <stdio.h>
+      #include <stdio.h>
 
-int main() { int a, b, c;
+      int main() { int a, b, c;
 
-printf("Digite os 3 lados do triângulo:\n");
-scanf("%d %d %d", &a, &b, &c);
+     printf("Digite os 3 lados do triângulo:\n");
+     scanf("%d %d %d", &a, &b, &c);
 
-if (a + b > c && a + c > b && b + c > a) {
+    if (a + b > c && a + c > b && b + c > a) {
     if (a == b && b == c) {
         printf("Triângulo equilátero.\n");
     } else if (a == b || a == c || b == c) {
@@ -187,12 +161,12 @@ if (a + b > c && a + c > b && b + c > a) {
     } else {
         printf("Triângulo escaleno.\n");
     }
-} else {
-    printf("Os valores informados não formam um triângulo.\n");
-}
+         } else {
+           printf("Os valores informados não formam um triângulo.\n");
+             }
 
-return 0;
-}
+        return 0;
+                 }
 
 **//Questão 13**
 
