@@ -1,17 +1,17 @@
 # Questões Matrizes
+
 **//Questão ? **
 
 #include <stdio.h>
-
 int main() {
-    //Declaração e inicializando de uma matriz de notas 5x4 de inteiros
-   int matriz[5][4] = {
-       {7, 8, 9, 4},
-       {5, 10, 1, 0},
-       {4, 10, 10, 10},
-       {10, 1, 6, 0},
-       {2, 8, 4, 0}
-   };
+//Declaração e inicializando de uma matriz de notas 5x4 de inteiros
+int matriz[5][4] = {
+{7, 8, 9, 4},
+{5, 10, 1, 0},
+{4, 10, 10, 10},
+{10, 1, 6, 0},
+{2, 8, 4, 0}
+};
      
    int soma = 0;
    
