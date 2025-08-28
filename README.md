@@ -294,3 +294,81 @@
 //Questão 63
 
     #include <stdio.h>
+    int main() {
+    int matriz[2][2];
+    int i, j;
+
+    // lendo a matriz
+    printf("Digite os 4 números da matriz 2x2:\n");
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("Elemento [%d][%d]: ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+
+    // impressão da matriz
+    printf("\nImprimindo os números da matriz 2x2:\n");
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {    
+            printf("%d ", matriz[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+    }
+
+//Questão 64
+
+    #include <stdio.h>
+    
+    int main() {
+    int matriz[3][3];
+    int i, j;
+
+    // leitura da matriz
+    printf("Digite os 9 números da matriz 3x3:\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            printf("Elemento [%d][%d]: ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+
+    // mostra a diagonal principal
+    printf("\nImprimindo os números da diagonal principal:\n");
+    for (i = 0; i < 3; i++) {
+        printf("%d ", matriz[i][i]); // aqui pega os números só da diagonal P. (tipo mesma linha mesma coluna)
+    }
+
+    printf("\n");
+    return 0;
+    }
+
+    
+//Questão 65
+
+    #include <stdio.h>
+
+    int main() {
+    int matriz[2][3];
+    int i, j, soma=0;
+
+    // leitura da matriz
+    printf("Digite os 6 números da matriz 2x3:\n");
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 3; j++) {
+            printf("Elemento [%d][%d]: ", i, j);
+            scanf("%d", &matriz[i][j]);
+            soma += matriz[i][j]; // acumula na soma
+        }
+        }
+        // resultado
+    printf("\nSoma de todos os elementos = %d\n", soma);
+    
+    
+    return 0;
+    }
+
+    
